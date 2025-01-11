@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Tile Rack Generator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+    <nav>
+        <ul>
+            <li>
+                <i class="nav-item" id="dark-mode-btn">
+                    Dark Mode
+                </i>
+            </li>
+        </ul>
+    </nav>
     <div class="container">
         <h1>Random Tile Rack Generator</h1>
-        <div id="tile-rack" class="tile-rack" ondrop="drop(event)" ondragover="allowDrop(event)">
-        </div>
-        <button id="generate-btn" class="btn">Generate next random tile rack</button>
-        <button id="dark-mode-btn" class="btn">Switch to Dark Mode</button>
-        <button id="stt-btn" class="btn">lazy tile mode</button>
+        <div id="tile-rack" class="tile-rack" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <button id="generate-btn" class="btn">
+            Generate next random tile rack
+        </button>
+        <button id="th-btn" class="btn">Lazy</button>
         <footer>&copy;Imeth De Silva</footer>
     </div>
-    
 
     <script src="script.js"></script>
 </body>
+
 </html>
